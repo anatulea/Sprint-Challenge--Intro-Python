@@ -10,14 +10,6 @@ class GroundVehicle():
     def drive(self):
         return 'vroooom'
 
-    def __str__(self):
-        return f'I am a Ground Vehicle with {self.num_wheels} wheels'
-
-
-myGroundVehicle = GroundVehicle()
-print(myGroundVehicle.drive())
-print(myGroundVehicle.__str__())
-
 
 # Subclass Motorcycle from GroundVehicle.
 #
@@ -33,12 +25,6 @@ class Motorcycle(GroundVehicle):
     def drive(self):
         return 'BRAAAP!!'
 
-    def __str__(self):
-        return f'I am a Motorcycle with {self.num_wheels} wheels'
-
-myMotorcycle = Motorcycle()
-print(myMotorcycle.drive())
-print(myMotorcycle.__str__())
 
 vehicles = [
     GroundVehicle(),
